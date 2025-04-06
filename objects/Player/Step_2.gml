@@ -16,18 +16,20 @@ var customFriction = 1.3
 
 var moving = false
 if !Claw.extending {
-	if keyboard_check(vk_left) {
+	if keyboard_check(vk_left) or keyboard_check(ord("A")) {
 		moving = true
 		hspeed = clamp(hspeed - acceleration * _dt, -maxHSpeed, maxHSpeed)
-	} else if keyboard_check(vk_right) {
+		image_xscale = -1
+	} else if keyboard_check(vk_right) or keyboard_check(ord("D")) {
 		moving = true
 		hspeed = clamp(hspeed + acceleration * _dt, -maxHSpeed, maxHSpeed)
+		image_xscale = 1
 	}
 
-	if keyboard_check(vk_up) {
+	if keyboard_check(vk_up) or keyboard_check(ord("W")) {
 		moving = true
 		vspeed = clamp(vspeed - acceleration * _dt, -maxVSpeed, maxVSpeed)
-	} else if keyboard_check(vk_down) {
+	} else if keyboard_check(vk_down) or keyboard_check(ord("S")) {
 		moving = true
 		vspeed = clamp(vspeed + acceleration * _dt, -maxVSpeed, maxVSpeed)
 	}
