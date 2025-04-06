@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"oil_seep",
   "bboxMode":0,
-  "bbox_bottom":99,
+  "bbox_bottom":9,
   "bbox_left":0,
-  "bbox_right":109,
+  "bbox_right":10,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -17,7 +17,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":100,
+  "height":10,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"5256e182-9f25-43de-beab-03626b8093b5","blendMode":0,"displayName":"default","isLocked":false,"name":"5256e182-9f25-43de-beab-03626b8093b5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -90,5 +90,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":110,
+  "width":11,
 }
