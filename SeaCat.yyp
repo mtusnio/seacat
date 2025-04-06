@@ -61,6 +61,7 @@
     {"id":{"name":"tasks","path":"scripts/tasks/tasks.yy",},},
     {"id":{"name":"cat_tmp","path":"sprites/cat_tmp/cat_tmp.yy",},},
     {"id":{"name":"claw","path":"sprites/claw/claw.yy",},},
+    {"id":{"name":"crab","path":"sprites/crab/crab.yy",},},
     {"id":{"name":"crystal","path":"sprites/crystal/crystal.yy",},},
     {"id":{"name":"crystalcage","path":"sprites/crystalcage/crystalcage.yy",},},
     {"id":{"name":"falling_rock","path":"sprites/falling_rock/falling_rock.yy",},},

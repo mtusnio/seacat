@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"placeholder",
-    "path":"sprites/placeholder/placeholder.yy",
+    "name":"crab",
+    "path":"sprites/crab/crab.yy",
   },
   "spriteMaskId":null,
   "visible":true,
