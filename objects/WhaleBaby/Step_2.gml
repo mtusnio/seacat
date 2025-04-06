@@ -1,6 +1,7 @@
 if follows {
-	x = Player.x - 30
+	x = Player.x - 35
 	y = Player.y - 7
+	image_xscale = -Player.image_xscale
 }
 
 
