@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Crystals",
+  "%Name":"Crystal",
   "eventList":[],
   "managed":true,
-  "name":"Crystals",
+  "name":"Crystal",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"crystal",
-    "path":"sprites/crystal/crystal.yy",
+    "name":"big_crystal_1",
+    "path":"sprites/big_crystal_1/big_crystal_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

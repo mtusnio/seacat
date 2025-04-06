@@ -10,7 +10,7 @@ global.collected_crystals = 0
 /// @param {Id.Instance} interactable
 function on_collided(interactable) {
 	if !holding {
-		if interactable.object_index == Crystals {
+		if interactable.object_index == Crystal {
 			global.collected_crystals += 1
 
 			earthquake = layer_get_id("Earthquake")
