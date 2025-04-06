@@ -59,7 +59,7 @@ function on_dropped() {
 }
 
 function get_player_position() {
-	return [Player.x - 4, Player.y + 7]
+	return [Player.x, Player.y + 7]
 }
 
 function claw_extend() {

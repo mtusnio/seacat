@@ -20,10 +20,12 @@ if !Claw.extending {
 		moving = true
 		hspeed = clamp(hspeed - acceleration * _dt, -maxHSpeed, maxHSpeed)
 		image_xscale = -1
+		Claw.image_xscale = -1
 	} else if keyboard_check(vk_right) or keyboard_check(ord("D")) {
 		moving = true
 		hspeed = clamp(hspeed + acceleration * _dt, -maxHSpeed, maxHSpeed)
 		image_xscale = 1
+		Claw.image_xscale = 1
 	}
 
 	if keyboard_check(vk_up) or keyboard_check(ord("W")) {
