@@ -40,8 +40,9 @@
   },
   "name":"SeaCat",
   "resources":[
+    {"id":{"name":"HudFont","path":"fonts/HudFont/HudFont.yy",},},
     {"id":{"name":"Claw","path":"objects/Claw/Claw.yy",},},
-    {"id":{"name":"CrystalCage","path":"objects/CrystalCage/CrystalCage.yy",},},
+    {"id":{"name":"CrystalCounter","path":"objects/CrystalCounter/CrystalCounter.yy",},},
     {"id":{"name":"Crystals","path":"objects/Crystals/Crystals.yy",},},
     {"id":{"name":"FallingRock","path":"objects/FallingRock/FallingRock.yy",},},
     {"id":{"name":"Interactable","path":"objects/Interactable/Interactable.yy",},},

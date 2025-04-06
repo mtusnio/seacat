@@ -4,6 +4,8 @@ enum ExtendingState {
 	Retracting = 2
 }
 
+global.collected_crystals = 0
+
 function on_collided(interactable) {
 	if !holding {
 		if interactable.object_index == Crystals {
@@ -18,15 +20,11 @@ function on_collided(interactable) {
 				xPosition = Player.x - random_range(-camera_get_view_width(1)/2 - 5, camera_get_view_width(1)/2 - 5)
 				instance_create_layer(xPosition, yPosition, "Instances", FallingRock)
 			}
-			holding = interactable.object_index
+			global.collected_crystals += 1
 			instance_destroy(interactable.id)
 		}
 	} else {
-		if interactable.object_index == CrystalCage {
-			global.collected_crystals += 1
-			holding = noone
-			return
-		}	
+
 	}
 
 	

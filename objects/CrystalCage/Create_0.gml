@@ -1,1 +1,0 @@
-global.collected_crystals = 0
