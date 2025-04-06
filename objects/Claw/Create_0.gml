@@ -6,6 +6,8 @@ enum ExtendingState {
 
 global.collected_crystals = 0
 
+/// @func on_collided(interactable)
+/// @param {Id.Instance} interactable
 function on_collided(interactable) {
 	if !holding {
 		if interactable.object_index == Crystals {
@@ -24,14 +26,14 @@ function on_collided(interactable) {
 				instance_create_layer(xPosition, yPosition, "Instances", FallingRock)
 			}
 			instance_destroy(interactable.id)
-		} else if interactable.object_index == OilRock {
-			holding = interactable.object_index	
-			instance_destroy(interactable.id)
 		} else if interactable.object_index == ItchyWhale {
 			if !ItchyWhale.Scratched {
 				task_solved()
 				ItchyWhale.Scratched = true
 			}
+		} else {
+			holding = interactable.object_index
+			instance_destroy(interactable.id)	
 		}
 	} else {
 		if interactable.object_index == Oilleak {
@@ -40,12 +42,11 @@ function on_collided(interactable) {
 				instance_destroy(interactable.id)
 				holding = noone
 			}
+		} else if interactable.object_index == Crab and holding == Crab {
+			instance_create_layer(interactable.x, interactable.bbox_top - interactable.sprite_height, "Instances", Crab)
+			holding = noone
 		}
-	}
-	
-	return true
-
-	
+	}	
 }
 
 function on_dropped() {
