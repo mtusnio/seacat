@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"BabyWhale",
+  "%Name":"WhaleBaby",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Player","path":"objects/Player/Player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"BabyWhale",
+  "name":"WhaleBaby",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,10 +32,10 @@
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"placeholder",
-    "path":"sprites/placeholder/placeholder.yy",
+    "name":"whale_baby",
+    "path":"sprites/whale_baby/whale_baby.yy",
   },
   "spriteMaskId":null,
   "visible":true,

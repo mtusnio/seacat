@@ -41,7 +41,6 @@
   "name":"SeaCat",
   "resources":[
     {"id":{"name":"HudFont","path":"fonts/HudFont/HudFont.yy",},},
-    {"id":{"name":"BabyWhale","path":"objects/BabyWhale/BabyWhale.yy",},},
     {"id":{"name":"Claw","path":"objects/Claw/Claw.yy",},},
     {"id":{"name":"Crab","path":"objects/Crab/Crab.yy",},},
     {"id":{"name":"CrystalCounter","path":"objects/CrystalCounter/CrystalCounter.yy",},},
@@ -57,6 +56,7 @@
     {"id":{"name":"TestCollidable","path":"objects/TestCollidable/TestCollidable.yy",},},
     {"id":{"name":"TestGameWorld","path":"objects/TestGameWorld/TestGameWorld.yy",},},
     {"id":{"name":"Whale","path":"objects/Whale/Whale.yy",},},
+    {"id":{"name":"WhaleBaby","path":"objects/WhaleBaby/WhaleBaby.yy",},},
     {"id":{"name":"GameBoard","path":"rooms/GameBoard/GameBoard.yy",},},
     {"id":{"name":"tasks","path":"scripts/tasks/tasks.yy",},},
     {"id":{"name":"cat_tmp","path":"sprites/cat_tmp/cat_tmp.yy",},},
@@ -70,6 +70,7 @@
     {"id":{"name":"rock","path":"sprites/rock/rock.yy",},},
     {"id":{"name":"seabed","path":"sprites/seabed/seabed.yy",},},
     {"id":{"name":"test_level","path":"sprites/test_level/test_level.yy",},},
+    {"id":{"name":"whale_baby","path":"sprites/whale_baby/whale_baby.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
