@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Oilleak",
+  "%Name":"OilSeep",
   "eventList":[],
   "managed":true,
-  "name":"Oilleak",
+  "name":"OilSeep",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"placeholder",
-    "path":"sprites/placeholder/placeholder.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
