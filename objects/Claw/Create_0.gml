@@ -61,6 +61,10 @@ function get_player_position() {
 	return [Player.x, Player.y + 7]
 }
 
+function get_player_orientation() {
+	return Player.image_xscale
+}
+
 function claw_extend() {
 	var interactable_collided = collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, Interactable, false, true)
 	
@@ -83,8 +87,10 @@ function claw_extend() {
 	}
 	
 	if extending == ExtendingState.Retracting {
+		sprite_index = claw
 		alarm_set(1, claw_retract_speed * game_get_speed(gamespeed_fps)) 
 	} else if  extending == ExtendingState.Extending {
+		sprite_index = claw_open
 		alarm_set(1, claw_extend_speed * game_get_speed(gamespeed_fps)) 
 	}
 }

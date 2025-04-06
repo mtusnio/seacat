@@ -61,6 +61,8 @@
     {"id":{"name":"tasks","path":"scripts/tasks/tasks.yy",},},
     {"id":{"name":"big_crystal_1","path":"sprites/big_crystal_1/big_crystal_1.yy",},},
     {"id":{"name":"cat_tmp","path":"sprites/cat_tmp/cat_tmp.yy",},},
+    {"id":{"name":"claw_crab","path":"sprites/claw_crab/claw_crab.yy",},},
+    {"id":{"name":"claw_open","path":"sprites/claw_open/claw_open.yy",},},
     {"id":{"name":"claw","path":"sprites/claw/claw.yy",},},
     {"id":{"name":"crab","path":"sprites/crab/crab.yy",},},
     {"id":{"name":"crystal","path":"sprites/crystal/crystal.yy",},},
