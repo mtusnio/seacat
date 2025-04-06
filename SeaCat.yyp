@@ -51,7 +51,6 @@
     {"id":{"name":"OilRock","path":"objects/OilRock/OilRock.yy",},},
     {"id":{"name":"OilSeep","path":"objects/OilSeep/OilSeep.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
-    {"id":{"name":"TestCollidable","path":"objects/TestCollidable/TestCollidable.yy",},},
     {"id":{"name":"TestGameWorld","path":"objects/TestGameWorld/TestGameWorld.yy",},},
     {"id":{"name":"Whale","path":"objects/Whale/Whale.yy",},},
     {"id":{"name":"WhaleBaby","path":"objects/WhaleBaby/WhaleBaby.yy",},},

@@ -3,7 +3,8 @@ if follows {
 	y = Player.y - 7
 }
 
-if distance_to_object(WhaleMother) < 150 {
+
+if distance_to_object(WhaleMother) < 70 {
 	follows = false
 	delivered = true
 	task_solved()

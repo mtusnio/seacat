@@ -36,9 +36,10 @@ function on_collided(interactable) {
 			instance_destroy(interactable.id)	
 		}
 	} else {
-		if interactable.object_index == Oilleak {
+		if interactable.object_index == OilSeep {
 			if holding == OilRock {
 				task_solved()
+				instance_create_layer(interactable.x, interactable.y, Instances, OilRock)
 				instance_destroy(interactable.id)
 				holding = noone
 			}
