@@ -14,8 +14,8 @@ function on_collided(interactable) {
 			earthquake = layer_get_id("Earthquake")
 			fx = layer_get_fx(earthquake)
 			var crystals_multiplier = global.collected_crystals
-			fx_set_parameter(fx, "g_Magnitude", 2 * crystals_multiplier)
-			fx_set_parameter(fx, "g_ShakeSpeed", 0.3 * crystals_multiplier)
+			fx_set_parameter(fx, "g_Magnitude", 1 * crystals_multiplier)
+			fx_set_parameter(fx, "g_ShakeSpeed", 0.9 * crystals_multiplier)
 			alarm_set(0, 1 * game_get_speed(gamespeed_fps))
 
 			for(i = 0; i < random_range(3 * crystals_multiplier, 7 * crystals_multiplier); i++) {
@@ -27,10 +27,16 @@ function on_collided(interactable) {
 		} else if interactable.object_index == OilRock {
 			holding = interactable.object_index	
 			instance_destroy(interactable.id)
+		} else if interactable.object_index == ItchyWhale {
+			if !ItchyWhale.Scratched {
+				task_solved()
+				ItchyWhale.Scratched = true
+			}
 		}
 	} else {
 		if interactable.object_index == Oilleak {
 			if holding == OilRock {
+				task_solved()
 				instance_destroy(interactable.id)
 				holding = noone
 			}
