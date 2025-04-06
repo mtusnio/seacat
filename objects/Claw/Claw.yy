@@ -31,11 +31,11 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"claw_extend_speed","filters":[],"listItems":[],"multiselect":false,"name":"claw_extend_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.10","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"claw_extend_speed","filters":[],"listItems":[],"multiselect":false,"name":"claw_extend_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.08","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"max_extend_range","filters":[],"listItems":[],"multiselect":false,"name":"max_extend_range","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"20","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"extended_range","filters":[],"listItems":[],"multiselect":false,"name":"extended_range","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"extending","filters":[],"listItems":[],"multiselect":false,"name":"extending","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
-    {"$GMObjectProperty":"v1","%Name":"claw_retract_speed","filters":[],"listItems":[],"multiselect":false,"name":"claw_retract_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.06","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"claw_retract_speed","filters":[],"listItems":[],"multiselect":false,"name":"claw_retract_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.04","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"holding","filters":[],"listItems":[],"multiselect":false,"name":"holding","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
   ],
   "resourceType":"GMObject",

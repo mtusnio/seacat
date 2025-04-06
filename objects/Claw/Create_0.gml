@@ -9,23 +9,35 @@ global.collected_crystals = 0
 function on_collided(interactable) {
 	if !holding {
 		if interactable.object_index == Crystals {
+			global.collected_crystals += 1
+
 			earthquake = layer_get_id("Earthquake")
 			fx = layer_get_fx(earthquake)
-			fx_set_parameter(fx, "g_Magnitude", 5)
-			fx_set_parameter(fx, "g_ShakeSpeed", 1.25)
+			var crystals_multiplier = global.collected_crystals
+			fx_set_parameter(fx, "g_Magnitude", 2 * crystals_multiplier)
+			fx_set_parameter(fx, "g_ShakeSpeed", 0.3 * crystals_multiplier)
 			alarm_set(0, 1 * game_get_speed(gamespeed_fps))
 
-			for(i = 0; i < random_range(14, 20); i++) {
+			for(i = 0; i < random_range(3 * crystals_multiplier, 7 * crystals_multiplier); i++) {
 				yPosition = Player.y - camera_get_view_height(1)/2 - 20 + random(5)
 				xPosition = Player.x - random_range(-camera_get_view_width(1)/2 - 5, camera_get_view_width(1)/2 - 5)
 				instance_create_layer(xPosition, yPosition, "Instances", FallingRock)
 			}
-			global.collected_crystals += 1
+			instance_destroy(interactable.id)
+		} else if interactable.object_index == OilRock {
+			holding = interactable.object_index	
 			instance_destroy(interactable.id)
 		}
 	} else {
-
+		if interactable.object_index == Oilleak {
+			if holding == OilRock {
+				instance_destroy(interactable.id)
+				holding = noone
+			}
+		}
 	}
+	
+	return true
 
 	
 }
@@ -54,7 +66,9 @@ function claw_extend() {
 	else if place_meeting(x, y + 1, MainLevel) {
 		extending = ExtendingState.Retracting
 		
-		on_dropped()
+		if holding {
+			on_dropped()
+		}
 	}
 	else {
 		y += 1

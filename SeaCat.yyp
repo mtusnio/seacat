@@ -47,6 +47,8 @@
     {"id":{"name":"FallingRock","path":"objects/FallingRock/FallingRock.yy",},},
     {"id":{"name":"Interactable","path":"objects/Interactable/Interactable.yy",},},
     {"id":{"name":"MainLevel","path":"objects/MainLevel/MainLevel.yy",},},
+    {"id":{"name":"Oilleak","path":"objects/Oilleak/Oilleak.yy",},},
+    {"id":{"name":"OilRock","path":"objects/OilRock/OilRock.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"TestCollidable","path":"objects/TestCollidable/TestCollidable.yy",},},
     {"id":{"name":"TestGameWorld","path":"objects/TestGameWorld/TestGameWorld.yy",},},

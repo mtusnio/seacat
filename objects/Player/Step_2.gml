@@ -6,23 +6,29 @@ if !Claw.extending and speed == 0 {
 	}
 }
 
-var acceleration = 10
+var acceleration = 2
 var _dt = delta_time / 1000000;
 
-var maxHSpeed = 3
-var maxVSpeed = 1
+var maxHSpeed = 4
+var maxVSpeed = 2.2
 var maxTotalSpeed = 7
-var customFriction = 2.0
+var customFriction = 1.3
+
+var moving = false
 if !Claw.extending {
 	if keyboard_check(vk_left) {
+		moving = true
 		hspeed = clamp(hspeed - acceleration * _dt, -maxHSpeed, maxHSpeed)
 	} else if keyboard_check(vk_right) {
+		moving = true
 		hspeed = clamp(hspeed + acceleration * _dt, -maxHSpeed, maxHSpeed)
 	}
 
 	if keyboard_check(vk_up) {
+		moving = true
 		vspeed = clamp(vspeed - acceleration * _dt, -maxVSpeed, maxVSpeed)
 	} else if keyboard_check(vk_down) {
+		moving = true
 		vspeed = clamp(vspeed + acceleration * _dt, -maxVSpeed, maxVSpeed)
 	}
 	
@@ -30,31 +36,33 @@ if !Claw.extending {
 }
 
 
-if hspeed > 0 {
-	hspeed = hspeed - customFriction * _dt
-	
-	if hspeed < 0 {
-		hspeed = 0	
-	}
-} else if hspeed < 0 {
-	hspeed = hspeed + customFriction * _dt
-	
+if !moving {
 	if hspeed > 0 {
-		hspeed = 0
+		hspeed = hspeed - customFriction * _dt
+	
+		if hspeed < 0 {
+			hspeed = 0	
+		}
+	} else if hspeed < 0 {
+		hspeed = hspeed + customFriction * _dt
+	
+		if hspeed > 0 {
+			hspeed = 0
+		}
 	}
-}
 
-if vspeed > 0 {
-	vspeed = vspeed - customFriction * _dt
-	
-	if vspeed < 0 {
-		vspeed = 0	
-	}
-} else if vspeed < 0 {
-	vspeed = vspeed + customFriction * _dt
-	
 	if vspeed > 0 {
-		vspeed = 0	
+		vspeed = vspeed - customFriction * _dt
+	
+		if vspeed < 0 {
+			vspeed = 0	
+		}
+	} else if vspeed < 0 {
+		vspeed = vspeed + customFriction * _dt
+	
+		if vspeed > 0 {
+			vspeed = 0	
+		}
 	}
 }
 
