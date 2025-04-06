@@ -71,6 +71,7 @@
     {"id":{"name":"seabed","path":"sprites/seabed/seabed.yy",},},
     {"id":{"name":"test_level","path":"sprites/test_level/test_level.yy",},},
     {"id":{"name":"whale_baby","path":"sprites/whale_baby/whale_baby.yy",},},
+    {"id":{"name":"whale_crying","path":"sprites/whale_crying/whale_crying.yy",},},
     {"id":{"name":"whale","path":"sprites/whale/whale.yy",},},
   ],
   "resourceType":"GMProject",

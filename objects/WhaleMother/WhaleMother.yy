@@ -26,10 +26,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"placeholder",
-    "path":"sprites/placeholder/placeholder.yy",
+    "name":"whale_crying",
+    "path":"sprites/whale_crying/whale_crying.yy",
   },
   "spriteMaskId":null,
   "visible":true,

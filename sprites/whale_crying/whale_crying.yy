@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
-  "%Name":"whale_baby",
+  "%Name":"whale_crying",
   "bboxMode":0,
-  "bbox_bottom":12,
+  "bbox_bottom":24,
   "bbox_left":0,
-  "bbox_right":36,
+  "bbox_right":63,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,17 +12,17 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c903be50-bbd6-462a-9ff2-27ad6eed986a","name":"c903be50-bbd6-462a-9ff2-27ad6eed986a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"20bc03c0-b40b-4a29-87df-b03b377fa18e","name":"20bc03c0-b40b-4a29-87df-b03b377fa18e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"6fa798f6-9383-4bf4-a2b1-171a84860441","name":"6fa798f6-9383-4bf4-a2b1-171a84860441","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"8e506dc8-548e-41db-826f-48bc06085ba4","name":"8e506dc8-548e-41db-826f-48bc06085ba4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":13,
+  "height":25,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"e7f2f062-3aed-4242-8f1d-0a28d34901de","blendMode":0,"displayName":"default","isLocked":false,"name":"e7f2f062-3aed-4242-8f1d-0a28d34901de","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"c047bdb2-e113-45bc-8647-c9bcee673fc8","blendMode":0,"displayName":"default","isLocked":false,"name":"c047bdb2-e113-45bc-8647-c9bcee673fc8","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"whale_baby",
+  "name":"whale_crying",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -34,7 +34,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"whale_baby",
+    "%Name":"whale_crying",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -58,9 +58,9 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"whale_baby",
+    "name":"whale_crying",
     "playback":1,
-    "playbackSpeed":3.0,
+    "playbackSpeed":1.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -70,11 +70,11 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c903be50-bbd6-462a-9ff2-27ad6eed986a","path":"sprites/whale_baby/whale_baby.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fa5c0c5b-f03e-4954-98b4-4d969f8a2785","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6fa798f6-9383-4bf4-a2b1-171a84860441","path":"sprites/whale_crying/whale_crying.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ec9c878a-a389-4c4b-839f-e52be3c229ef","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"20bc03c0-b40b-4a29-87df-b03b377fa18e","path":"sprites/whale_baby/whale_baby.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7bd05169-3ec2-4930-90f8-d8b9ad4b2bfb","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8e506dc8-548e-41db-826f-48bc06085ba4","path":"sprites/whale_crying/whale_crying.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"28411a39-bb7f-4996-8ae0-f68dbd69cca3","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -90,5 +90,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":37,
+  "width":64,
 }
