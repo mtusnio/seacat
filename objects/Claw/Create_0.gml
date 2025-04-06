@@ -26,10 +26,10 @@ function on_collided(interactable) {
 				instance_create_layer(xPosition, yPosition, "Instances", FallingRock)
 			}
 			instance_destroy(interactable.id)
-		} else if interactable.object_index == ItchyWhale {
-			if !ItchyWhale.Scratched {
+		} else if interactable.object_index == WhaleItchy {
+			if !WhaleItchy.Scratched {
 				task_solved()
-				ItchyWhale.Scratched = true
+				WhaleItchy.Scratched = true
 			}
 		} else {
 			holding = interactable.object_index

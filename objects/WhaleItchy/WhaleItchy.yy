@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"ItchyWhale",
+  "%Name":"WhaleItchy",
   "eventList":[],
   "managed":true,
-  "name":"ItchyWhale",
+  "name":"WhaleItchy",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"placeholder",
-    "path":"sprites/placeholder/placeholder.yy",
+    "name":"whale",
+    "path":"sprites/whale/whale.yy",
   },
   "spriteMaskId":null,
   "visible":true,
