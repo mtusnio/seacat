@@ -32,13 +32,17 @@ function on_collided(interactable) {
 				WhaleItchy.Scratched = true
 			}
 		} else {
-			holding = interactable.object_index
-			instance_destroy(interactable.id)	
+			if variable_instance_exists(interactable.id, "Pickable") and variable_instance_get(interactable.id, "Pickable") {
+				holding = interactable.object_index
+				instance_destroy(interactable.id)	
+			}
 		}
 	} else {
-		if interactable.object_index == Oilleak {
+		if interactable.object_index == OilSeep {
 			if holding == OilRock {
 				task_solved()
+				created = instance_create_layer(interactable.x, interactable.y, "Instances", OilRock)
+				variable_instance_set(created, "Pickable", false)
 				instance_destroy(interactable.id)
 				holding = noone
 			}

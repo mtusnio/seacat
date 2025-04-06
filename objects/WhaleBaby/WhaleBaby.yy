@@ -32,7 +32,7 @@
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
     "name":"whale_baby",
     "path":"sprites/whale_baby/whale_baby.yy",

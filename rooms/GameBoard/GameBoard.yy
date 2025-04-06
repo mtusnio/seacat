@@ -20,7 +20,6 @@
     {"name":"inst_4062567C","path":"rooms/GameBoard/GameBoard.yy",},
     {"name":"inst_5084956","path":"rooms/GameBoard/GameBoard.yy",},
     {"name":"inst_621505BF","path":"rooms/GameBoard/GameBoard.yy",},
-    {"name":"inst_78A0196D","path":"rooms/GameBoard/GameBoard.yy",},
     {"name":"inst_21158C0A","path":"rooms/GameBoard/GameBoard.yy",},
   ],
   "isDnd":false,
@@ -31,8 +30,7 @@
         {"name":"g_NoiseTexture","type":2,"value":"_filter_screenshake_noise",},
       ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Hud","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_78A0196D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_78A0196D","objectId":{"name":"CrystalCounter","path":"objects/CrystalCounter/CrystalCounter.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.25,"scaleY":8.0,"x":27.0,"y":696.0,},
-        {"$GMRInstance":"v1","%Name":"inst_621505BF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_621505BF","objectId":{"name":"CrystalCounter","path":"objects/CrystalCounter/CrystalCounter.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":9.680327,"scaleY":9.680326,"x":30.418037,"y":687.5984,},
+        {"$GMRInstance":"v1","%Name":"inst_621505BF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_621505BF","objectId":{"name":"CrystalCounter","path":"objects/CrystalCounter/CrystalCounter.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":9.680327,"scaleY":9.680326,"x":8.418037,"y":727.5984,},
       ],"layers":[],"name":"Hud","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_19F2D7EF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_19F2D7EF","objectId":{"name":"Player","path":"objects/Player/Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":284.0,"y":65.0,},
