@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"cat_tmp",
-    "path":"sprites/cat_tmp/cat_tmp.yy",
+    "name":"player",
+    "path":"sprites/player/player.yy",
   },
   "spriteMaskId":null,
   "visible":true,

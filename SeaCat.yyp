@@ -67,6 +67,8 @@
     {"id":{"name":"level","path":"sprites/level/level.yy",},},
     {"id":{"name":"ocean","path":"sprites/ocean/ocean.yy",},},
     {"id":{"name":"placeholder","path":"sprites/placeholder/placeholder.yy",},},
+    {"id":{"name":"player_blushing","path":"sprites/player_blushing/player_blushing.yy",},},
+    {"id":{"name":"player","path":"sprites/player/player.yy",},},
     {"id":{"name":"rock","path":"sprites/rock/rock.yy",},},
     {"id":{"name":"seabed","path":"sprites/seabed/seabed.yy",},},
     {"id":{"name":"test_level","path":"sprites/test_level/test_level.yy",},},
