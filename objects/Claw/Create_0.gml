@@ -39,7 +39,7 @@ function on_collided(interactable) {
 		if interactable.object_index == OilSeep {
 			if holding == OilRock {
 				task_solved()
-				instance_create_layer(interactable.x, interactable.y, Instances, OilRock)
+				instance_create_layer(interactable.x, interactable.y, "Instances", OilRock)
 				instance_destroy(interactable.id)
 				holding = noone
 			}
