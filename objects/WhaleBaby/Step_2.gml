@@ -11,6 +11,7 @@ if distance_to_object(WhaleMother) < 25 {
 	
 	x = WhaleMother.x + 24
 	y = WhaleMother.y + 20
+	WhaleMother.sprite_index = whale
 	image_xscale = 1
 	task_solved()
 }

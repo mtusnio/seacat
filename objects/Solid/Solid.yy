@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"MainLevel",
+  "%Name":"Solid",
   "eventList":[],
   "managed":true,
-  "name":"MainLevel",
+  "name":"Solid",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"Solid",
-    "path":"objects/Solid/Solid.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"level",
-    "path":"sprites/level/level.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
