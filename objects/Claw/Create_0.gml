@@ -47,7 +47,9 @@ function on_collided(interactable) {
 				holding = noone
 			}
 		} else if interactable.object_index == Crab and holding == Crab {
-			instance_create_layer(interactable.x, interactable.bbox_top - interactable.sprite_height, "Instances", Crab)
+			created_crab = instance_create_layer(interactable.x, interactable.bbox_top - interactable.sprite_height, "Instances", Crab)
+			current_stack_size = variable_instance_get(interactable.id, "StackSize")
+			variable_instance_set(created_crab.id, "StackSize", current_stack_size + 1)
 			holding = noone
 		}
 	}	
@@ -58,7 +60,6 @@ function on_dropped() {
 		show_error("on_dropped called when nothing is being held", false)
 		return	
 	}
-
 }
 
 function get_player_position() {

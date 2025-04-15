@@ -55,6 +55,7 @@
     {"id":{"name":"OilSeep","path":"objects/OilSeep/OilSeep.yy",},},
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"Solid","path":"objects/Solid/Solid.yy",},},
+    {"id":{"name":"TrappedCrab","path":"objects/TrappedCrab/TrappedCrab.yy",},},
     {"id":{"name":"Whale","path":"objects/Whale/Whale.yy",},},
     {"id":{"name":"WhaleBaby","path":"objects/WhaleBaby/WhaleBaby.yy",},},
     {"id":{"name":"WhaleItchy","path":"objects/WhaleItchy/WhaleItchy.yy",},},
