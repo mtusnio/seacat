@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"SeaCat",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -26,6 +26,7 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"cat_tmp.aseprite","CopyToMask":-1,"filePath":"datafiles/graphics","name":"cat_tmp.aseprite","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"cat_tmp.png","CopyToMask":-1,"filePath":"datafiles/graphics","name":"cat_tmp.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -36,11 +37,13 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"SeaCat",
   "resources":[
     {"id":{"name":"HudFont","path":"fonts/HudFont/HudFont.yy",},},
+    {"id":{"name":"BlastDoor","path":"objects/BlastDoor/BlastDoor.yy",},},
+    {"id":{"name":"Button","path":"objects/Button/Button.yy",},},
     {"id":{"name":"Claw","path":"objects/Claw/Claw.yy",},},
     {"id":{"name":"Crab","path":"objects/Crab/Crab.yy",},},
     {"id":{"name":"Crystal","path":"objects/Crystal/Crystal.yy",},},
@@ -56,9 +59,13 @@
     {"id":{"name":"WhaleBaby","path":"objects/WhaleBaby/WhaleBaby.yy",},},
     {"id":{"name":"WhaleItchy","path":"objects/WhaleItchy/WhaleItchy.yy",},},
     {"id":{"name":"WhaleMother","path":"objects/WhaleMother/WhaleMother.yy",},},
+    {"id":{"name":"WhaleTrapped","path":"objects/WhaleTrapped/WhaleTrapped.yy",},},
     {"id":{"name":"GameBoard","path":"rooms/GameBoard/GameBoard.yy",},},
     {"id":{"name":"tasks","path":"scripts/tasks/tasks.yy",},},
     {"id":{"name":"big_crystal_1","path":"sprites/big_crystal_1/big_crystal_1.yy",},},
+    {"id":{"name":"blastdoor","path":"sprites/blastdoor/blastdoor.yy",},},
+    {"id":{"name":"button_pressed","path":"sprites/button_pressed/button_pressed.yy",},},
+    {"id":{"name":"button_unpressed","path":"sprites/button_unpressed/button_unpressed.yy",},},
     {"id":{"name":"cat_tmp","path":"sprites/cat_tmp/cat_tmp.yy",},},
     {"id":{"name":"claw_crab","path":"sprites/claw_crab/claw_crab.yy",},},
     {"id":{"name":"claw_open","path":"sprites/claw_open/claw_open.yy",},},

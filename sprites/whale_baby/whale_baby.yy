@@ -33,7 +33,7 @@
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
-    "$GMSequence":"",
+    "$GMSequence":"v1",
     "%Name":"whale_baby",
     "autoRecord":true,
     "backdropHeight":768,
@@ -64,6 +64,8 @@
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
+    "seqHeight":13.0,
+    "seqWidth":37.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,
