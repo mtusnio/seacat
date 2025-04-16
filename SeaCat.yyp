@@ -58,7 +58,9 @@
     {"id":{"name":"WhaleItchy","path":"objects/WhaleItchy/WhaleItchy.yy",},},
     {"id":{"name":"WhaleMother","path":"objects/WhaleMother/WhaleMother.yy",},},
     {"id":{"name":"WhaleTrapped","path":"objects/WhaleTrapped/WhaleTrapped.yy",},},
+    {"id":{"name":"DefeatRoom","path":"rooms/DefeatRoom/DefeatRoom.yy",},},
     {"id":{"name":"GameBoard","path":"rooms/GameBoard/GameBoard.yy",},},
+    {"id":{"name":"VictoryRoom","path":"rooms/VictoryRoom/VictoryRoom.yy",},},
     {"id":{"name":"crab_head","path":"scripts/crab_head/crab_head.yy",},},
     {"id":{"name":"tasks","path":"scripts/tasks/tasks.yy",},},
     {"id":{"name":"big_crystal_1","path":"sprites/big_crystal_1/big_crystal_1.yy",},},
@@ -91,6 +93,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"GameBoard","path":"rooms/GameBoard/GameBoard.yy",},},
+    {"roomId":{"name":"VictoryRoom","path":"rooms/VictoryRoom/VictoryRoom.yy",},},
+    {"roomId":{"name":"DefeatRoom","path":"rooms/DefeatRoom/DefeatRoom.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
