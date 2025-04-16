@@ -6,6 +6,13 @@ enum ExtendingState {
 
 global.collected_crystals = 0
 
+function resolve_claw_holding_animation() {
+	if holding.object_index == Crab {
+		sprite_index = claw_crab
+	} else if holding.object_index == OilRock {
+		sprite_index = claw_rock
+	}
+}
 /// @func on_collided(interactable)
 /// @param {Id.Instance} interactable
 function on_collided(interactable) {
@@ -34,6 +41,7 @@ function on_collided(interactable) {
 		} else {
 			if variable_instance_exists(interactable.id, "Pickable") and variable_instance_get(interactable.id, "Pickable") {
 				holding = interactable.object_index
+				resolve_claw_holding_animation()
 				instance_destroy(interactable.id)	
 			}
 		}
@@ -63,6 +71,17 @@ function on_dropped() {
 		show_error("on_dropped called when nothing is being held", false)
 		return	
 	}
+	
+	var y_pos = y + 1
+	var x_pos = x
+	if holding == OilRock {
+		x_pos = x - 8
+		y_pos = y - 8
+	}
+
+	instance_create_layer(x_pos, y_pos, "Instances", holding)
+	holding = noone
+	image_index = claw_open
 }
 
 function get_player_position() {
@@ -95,10 +114,14 @@ function claw_extend() {
 	}
 	
 	if extending == ExtendingState.Retracting {
-		sprite_index = claw
+		if !holding {
+			sprite_index = claw
+		}
 		alarm_set(1, claw_retract_speed * game_get_speed(gamespeed_fps)) 
 	} else if  extending == ExtendingState.Extending {
-		sprite_index = claw_open
+		if !holding {
+			sprite_index = claw_open
+		}
 		alarm_set(1, claw_extend_speed * game_get_speed(gamespeed_fps)) 
 	}
 }

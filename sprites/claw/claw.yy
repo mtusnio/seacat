@@ -19,6 +19,7 @@
   "height":7,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"b878ef41-8e9e-4f9d-b0c5-4cdbd95e4fbd","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"b878ef41-8e9e-4f9d-b0c5-4cdbd95e4fbd","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"91b1af50-d7d3-4bed-a470-72238b177773","blendMode":0,"displayName":"default","isLocked":false,"name":"91b1af50-d7d3-4bed-a470-72238b177773","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"claw",
