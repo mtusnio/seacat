@@ -15,7 +15,7 @@ function on_collided(interactable) {
 
 			earthquake = layer_get_id("Earthquake")
 			fx = layer_get_fx(earthquake)
-			var crystals_multiplier = global.collected_crystals
+			var crystals_multiplier = power(global.collected_crystals, 1.25)
 			fx_set_parameter(fx, "g_Magnitude", 1 * crystals_multiplier)
 			fx_set_parameter(fx, "g_ShakeSpeed", 0.9 * crystals_multiplier)
 			alarm_set(0, 1 * game_get_speed(gamespeed_fps))
@@ -41,14 +41,17 @@ function on_collided(interactable) {
 		if interactable.object_index == OilSeep {
 			if holding == OilRock {
 				task_solved()
-				created = instance_create_layer(interactable.x, interactable.y, "Instances", OilRock)
+				var created = instance_create_layer(interactable.x, interactable.y, "Instances", OilRock)
 				variable_instance_set(created, "Pickable", false)
 				instance_destroy(interactable.id)
 				holding = noone
 			}
 		} else if interactable.object_index == Crab and holding == Crab {
-			created_crab = instance_create_layer(interactable.x, interactable.bbox_top - interactable.sprite_height, "Instances", Crab)
-			current_stack_size = variable_instance_get(interactable.id, "StackSize")
+			show_debug_message("Bbox_top: {0} Sprite height: {1}", interactable.bbox_top, interactable.sprite_height)
+			var drop_y_pos = crab_head_y(interactable)
+			show_debug_message("Drop Y Pos: {0}", drop_y_pos)
+			var created_crab = instance_create_layer(interactable.x, drop_y_pos, "Instances", Crab)
+			var current_stack_size = variable_instance_get(interactable.id, "StackSize")
 			variable_instance_set(created_crab.id, "StackSize", current_stack_size + 1)
 			holding = noone
 		}

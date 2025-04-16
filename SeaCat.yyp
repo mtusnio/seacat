@@ -62,6 +62,7 @@
     {"id":{"name":"WhaleMother","path":"objects/WhaleMother/WhaleMother.yy",},},
     {"id":{"name":"WhaleTrapped","path":"objects/WhaleTrapped/WhaleTrapped.yy",},},
     {"id":{"name":"GameBoard","path":"rooms/GameBoard/GameBoard.yy",},},
+    {"id":{"name":"crab_head","path":"scripts/crab_head/crab_head.yy",},},
     {"id":{"name":"tasks","path":"scripts/tasks/tasks.yy",},},
     {"id":{"name":"big_crystal_1","path":"sprites/big_crystal_1/big_crystal_1.yy",},},
     {"id":{"name":"blastdoor","path":"sprites/blastdoor/blastdoor.yy",},},
