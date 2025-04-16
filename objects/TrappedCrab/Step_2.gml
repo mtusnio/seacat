@@ -27,5 +27,6 @@ if isMoving() {
 	} else {
 		x = JumpX
 		y = JumpY
+		task_solved()
 	}
 }

@@ -81,7 +81,6 @@
     {"id":{"name":"player_blushing","path":"sprites/player_blushing/player_blushing.yy",},},
     {"id":{"name":"player","path":"sprites/player/player.yy",},},
     {"id":{"name":"rock","path":"sprites/rock/rock.yy",},},
-    {"id":{"name":"seabed","path":"sprites/seabed/seabed.yy",},},
     {"id":{"name":"small_crystal_1","path":"sprites/small_crystal_1/small_crystal_1.yy",},},
     {"id":{"name":"small_crystal_2","path":"sprites/small_crystal_2/small_crystal_2.yy",},},
     {"id":{"name":"whale_baby","path":"sprites/whale_baby/whale_baby.yy",},},

@@ -4,8 +4,6 @@ enum ExtendingState {
 	Retracting = 2
 }
 
-global.collected_crystals = 0
-
 function resolve_claw_holding_animation() {
 	if holding.object_index == Crab {
 		sprite_index = claw_crab
@@ -73,10 +71,11 @@ function on_dropped() {
 	}
 	
 	var y_pos = y + 1
-	var x_pos = x
+	var x_pos = x - 8
 	if holding == OilRock {
-		x_pos = x - 8
 		y_pos = y - 8
+	} else {
+		x_pos = x - holding.sprite_width / 2
 	}
 
 	instance_create_layer(x_pos, y_pos, "Instances", holding)
@@ -115,7 +114,7 @@ function claw_extend() {
 	
 	if extending == ExtendingState.Retracting {
 		if !holding {
-			sprite_index = claw
+			sprite_index = claw_open
 		}
 		alarm_set(1, claw_retract_speed * game_get_speed(gamespeed_fps)) 
 	} else if  extending == ExtendingState.Extending {
@@ -134,5 +133,9 @@ function claw_retract() {
 	} else {
 		image_index = 0
 		extending = ExtendingState.None
+		
+		if !holding {
+			sprite_index = claw
+		}
 	}
 }
