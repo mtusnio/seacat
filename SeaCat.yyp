@@ -71,6 +71,7 @@
     {"id":{"name":"claw_open","path":"sprites/claw_open/claw_open.yy",},},
     {"id":{"name":"claw_rock","path":"sprites/claw_rock/claw_rock.yy",},},
     {"id":{"name":"claw","path":"sprites/claw/claw.yy",},},
+    {"id":{"name":"crab_crying","path":"sprites/crab_crying/crab_crying.yy",},},
     {"id":{"name":"crab","path":"sprites/crab/crab.yy",},},
     {"id":{"name":"crystal","path":"sprites/crystal/crystal.yy",},},
     {"id":{"name":"crystalcage","path":"sprites/crystalcage/crystalcage.yy",},},

@@ -15,10 +15,11 @@ if !Saved {
 				JumpY = crab_head_y(found_crab)
 				HeightX = (JumpX + StartX) / 2.0
 				HeightY = StartY - 20.0
+				sprite_index = crab
 				break
 			}
 		}
 	}
 
-	alarm_set(0, 2 * game_get_speed(gamespeed_fps)) 
+	alarm_set(0, 0.25 * game_get_speed(gamespeed_fps)) 
 }

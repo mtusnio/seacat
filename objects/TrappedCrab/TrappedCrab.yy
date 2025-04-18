@@ -45,8 +45,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"crab",
-    "path":"sprites/crab/crab.yy",
+    "name":"crab_crying",
+    "path":"sprites/crab_crying/crab_crying.yy",
   },
   "spriteMaskId":null,
   "visible":true,

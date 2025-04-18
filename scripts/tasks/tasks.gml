@@ -1,20 +1,20 @@
 global.solved_tasks = 0
 global.collected_crystals = 0
+global.tasks_to_win = 5
+global.crystals_to_win = 5
 
 
 function task_solved(){
-	var TASKS_TO_WIN = 5
 	global.solved_tasks += 1
-	if(global.solved_tasks >= TASKS_TO_WIN) {
+	show_debug_message("Task solved")
+	if(global.solved_tasks >= global.tasks_to_win) {
 		room_goto(VictoryRoom)
 	}
 }
 
 function crystal_collected() {
-	var CRYSTALS_TO_WIN = 5
-
 	global.collected_crystals += 1
-	if(global.collected_crystals >= CRYSTALS_TO_WIN) {
+	if(global.collected_crystals >= global.crystals_to_win) {
 		room_goto(DefeatRoom)
 	} else {
 		earthquake = layer_get_id("Earthquake")
