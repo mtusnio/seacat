@@ -1,1 +1,3 @@
-follows = true
+if !delivered {
+	follows = true
+}
