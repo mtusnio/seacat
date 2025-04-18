@@ -78,4 +78,6 @@ if !moving {
 if array_length(move_and_collide(horizontal_speed, vertical_speed, Solid, 20)) != 0 {
 	vertical_speed = 0
 	horizontal_speed = 0
+	sprite_index = player_blushing
+	alarm_set(0, 1.5 * game_get_speed(gamespeed_fps))
 }

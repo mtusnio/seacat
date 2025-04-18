@@ -9,7 +9,10 @@
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"Interactable",
+    "path":"objects/Interactable/Interactable.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":true,
   "spriteId":{
-    "name":"whale",
-    "path":"sprites/whale/whale.yy",
+    "name":"whale_itchy",
+    "path":"sprites/whale_itchy/whale_itchy.yy",
   },
   "spriteMaskId":null,
   "visible":true,

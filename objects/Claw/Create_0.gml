@@ -1,7 +1,8 @@
 enum ExtendingState {
 	None = 0,
 	Extending = 1,
-	Retracting = 2
+	Retracting = 2,
+	Stuck = 3,
 }
 
 function resolve_claw_holding_animation() {
@@ -11,9 +12,15 @@ function resolve_claw_holding_animation() {
 		sprite_index = claw_rock
 	}
 }
+
+function scratch() {
+	
+}
 /// @func on_collided(interactable)
 /// @param {Id.Instance} interactable
 function on_collided(interactable) {
+	extending = ExtendingState.Retracting
+
 	if !holding {
 		if interactable.object_index == Crystal {
 			crystal_collected()
@@ -23,6 +30,9 @@ function on_collided(interactable) {
 			if !WhaleItchy.Scratched {
 				task_solved()
 				WhaleItchy.Scratched = true
+				interactable.sprite_index = whale
+				extending = ExtendingState.Stuck
+				alarm_set(2, 0.2 * game_get_speed(gamespeed_fps))
 			}
 		} else {
 			if variable_instance_exists(interactable.id, "Pickable") and variable_instance_get(interactable.id, "Pickable") {
@@ -84,7 +94,6 @@ function claw_extend() {
 	
 	if interactable_collided {
 		on_collided(interactable_collided)
-		extending = ExtendingState.Retracting
 	} else if extended_range >= max_extend_range {
 		extending = ExtendingState.Retracting
 	}
