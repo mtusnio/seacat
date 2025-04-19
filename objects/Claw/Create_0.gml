@@ -92,7 +92,7 @@ function get_player_orientation() {
 function claw_extend() {
 	var interactable_collided = collision_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, Interactable, false, true)
 	
-	if interactable_collided {
+	if interactable_collided and extending == ExtendingState.Extending {
 		on_collided(interactable_collided)
 	} else if extended_range >= max_extend_range {
 		extending = ExtendingState.Retracting
