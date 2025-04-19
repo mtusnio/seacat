@@ -34,7 +34,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.0.190",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"SeaCat",
   "resources":[
@@ -45,6 +45,7 @@
     {"id":{"name":"Crab","path":"objects/Crab/Crab.yy",},},
     {"id":{"name":"Crystal","path":"objects/Crystal/Crystal.yy",},},
     {"id":{"name":"CrystalCounter","path":"objects/CrystalCounter/CrystalCounter.yy",},},
+    {"id":{"name":"FadeIn","path":"objects/FadeIn/FadeIn.yy",},},
     {"id":{"name":"FallingRock","path":"objects/FallingRock/FallingRock.yy",},},
     {"id":{"name":"Interactable","path":"objects/Interactable/Interactable.yy",},},
     {"id":{"name":"MainLevel","path":"objects/MainLevel/MainLevel.yy",},},
@@ -75,6 +76,7 @@
     {"id":{"name":"crab","path":"sprites/crab/crab.yy",},},
     {"id":{"name":"crystal","path":"sprites/crystal/crystal.yy",},},
     {"id":{"name":"crystalcage","path":"sprites/crystalcage/crystalcage.yy",},},
+    {"id":{"name":"defeat_screen","path":"sprites/defeat_screen/defeat_screen.yy",},},
     {"id":{"name":"falling_rock","path":"sprites/falling_rock/falling_rock.yy",},},
     {"id":{"name":"level","path":"sprites/level/level.yy",},},
     {"id":{"name":"medium_crystal_1","path":"sprites/medium_crystal_1/medium_crystal_1.yy",},},
